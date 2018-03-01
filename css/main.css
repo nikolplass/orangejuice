@@ -156,3 +156,11 @@ button {
 	left: 0;
 	bottom: 0;
 }
+
+/*@media queries*/
+
+@media screen and (max-width: 1280px) and (min-width: 1099px) {
+    nav ul {
+        
+    }
+}
