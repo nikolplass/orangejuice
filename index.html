@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Character Set -->
+		<!-- 1Character Set -->
 		<meta charset="utf-8">
-
-		<!-- added viewport-->
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<!-- Creator of Website -->
-		<meta name="author" content="Nikol Plass">
-		
-		<!-- Description of Website -->
+		<!-- 2Description of Website -->
 		<meta name="Description" content="orangejuice Web Page-PSD to HTML">
-		
-		<!-- Title -->
+		<!-- 3Title -->
 		<title>orangejuice home</title>
-		
-		<!-- Favorite Icon -->
-		<link rel="shortcut icon" href="img/favicon.ico">
-		
-		<!-- Font Awesome CSS - Icons-->
-		<script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Viewport - Makes media queries work -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<!-- Link to Bootstrap CSS - This makes the bootstrap css work Updated 1/29/2018-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Font Awesome CSS - Icons-->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-	
 		<!-- CSS Reset -->
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-
+		<!-- 	<link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/main.css">
-	</head>
-	
-	<!-- Content -->
-	<body>
-		<nav>
-			<div id="logo"><a href="#"><img src="img/orangejuice-logo.png" alt="orangejuice logo"></a></div>
-			<ul>
-				<li><a href="#">home</a></li>
+		</head>
+		<!-- Content -->
+		<body>
+	<!--<nav>
+	<div id="logo"><a href="#"><img src="img/orangejuice-logo.png" alt="orangejuice logo Orange Slice by Youmena from the Noun Project"></a>
+	</div>
+	<ul>
+	<li><a href="#">home</a></li>
 				<li><a href="#">about </a></li>
 				<li><a href="#">Case studies</a></li>
 				<li><a href="#">Blog</a></li>
 				<li><a href="#">contact</a></li>
 			</ul>
+		</nav> -->
+		<!-- New Bootstrap Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+	    <a class="navbar-brand" href="#">
+    	<img src="img/orangejuice-logo.png" alt="orangejuice logo Orange Slice by Youmena from the Noun Project">
+  		</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	    	<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link" href="#">about</a>
+	      <a class="nav-item nav-link" href="#">case studies</a>
+	      <a class="nav-item nav-link" href="#">blog</a>
+	      <a class="nav-item nav-link" href="#">contact</a>
+
+    		</div>
+    						<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				</form>
+  		</div>
 		</nav>
-		<header>
-			<div class="left"><img src="img/oranges.png" alt="two oranges"></div>
-			<div class="right">
-				<div class="searchbox">
-				<!--<input type="text" placeholder="search">-->search
+		<div class="container">
+  		<div class="row align-items-center">
+  		<div class="col">
+      	<img src="img/oranges2.jpg" alt="two oranges">
+    	</div>
+    <div class="col">
+      <p><strong>orange</strong>juice<sup>TM</sup> use only the very best design fruits to create your <span class="teal">web</span> &amp; <span class="teal">app</span> designs.</p>
+			<button type="button" class="btn btn-primary btn-sm quote">Get a quote</button>
+			<button type="button" class="btn btn-secondary btn-sm casestudies">View Case Studies</button>
+			<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+			</div>
+    </div>
+  </div>
+			<!-- <div class="left"><img src="img/oranges2.jpg" alt="two oranges"></div>
+			<div class="right"> -->
+				<!-- <div class="searchbox">
+				<input type="text" placeholder="search">search
 				<i class="fa fa-search" aria-hidden="true"></i>
-				</div>
-				<p><strong>orange</strong>juice<sup>TM</sup> use only the very best design fruits to create your <span class="teal">web</span> & <span class="teal">app</span> designs.</p>
+				</div> -->
+				<!-- <p><strong>orange</strong>juice<sup>TM</sup> use only the very best design fruits to create your <span class="teal">web</span> & <span class="teal">app</span> designs.</p>
 			<button class="quote">Get a quote</button>
 			<button class="casestudies">View Case Studies</button>
 			</div>
-			<!-- <div class="left"><img src="img/oranges.png" alt="two oranges"></div> -->
-		</header>
+			<div class="left"><img src="img/oranges.png" alt="two oranges"></div> -->
 	<footer class="footer"></footer>
+	<!-- Gives access to jQuery library Updated 1/29/2018-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<!-- Popper.js is required for bootstrap 4 JavaScript functionality -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- link to Bootstrap 4 JavaScript plugins updated 1/29/2018-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
