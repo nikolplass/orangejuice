@@ -1,0 +1,110 @@
+/*Reset*/
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+/*Bootstrap CSS* Edits - Navigation and Logo*/
+
+.bg-light {
+	background-color: #fd7d23!important;
+}
+
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #FFF8E2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #FFF8E2;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fef2b5;
+}
+
+.navbar-light .navbar-toggler {
+	color: #FFF8E2;
+	background-color: transparent;
+}
+
+.navbar-expand-lg .navbar-nav {
+}
+
+/* Body
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+	width: auto;
+	padding: 10%;
+}
+
+.col p {
+	color: #FD7D23;
+	font-size: 30px;
+	line-height: 40px;
+	word-spacing: 1px;
+	font-weight: 400;
+}
+
+/*classes for text changes*/
+.teal {
+	color: #7DCCC7;
+	font-weight: 700;
+}
+
+p strong {
+	font-weight: 700;
+}
+
+p sup {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/*Button Styling*/
+button {
+	text-transform: uppercase;
+}
+.btn {
+	border-color: transparent;
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: #FD7D23;
+}
+
+.btn-secondary {
+	background-color: #7DCCC7;
+}
+
+.btn-primary:hover {
+	background-color: #f37027;
+	border-color: transparent;
+}
+
+.btn-secondary:hover {
+	background-color: #5ac2c6;
+	border-color: transparent;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Set the fixed height of the footer here */
+	background-color: #7DCCC7;
+}
